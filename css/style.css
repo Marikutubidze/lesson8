@@ -1,8 +1,15 @@
+.accent-color {
+    color:#5a5454;
+}
+
 html,
 body {
+    font-family: 'Amiri', serif;
+}
+
+.wrapper {
     width: 90%;
     margin: 0 auto;
-    font-family: 'Amiri', serif;
 }
 
 /* header */
@@ -10,13 +17,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .logo {
     width: 10vw;
     min-width: 140px;
-    max-width: 200px;
+    max-width: 350px;
 }
 
 nav > ul {
@@ -26,8 +33,8 @@ nav > ul {
 }
 
 li {
-    font-size: 1.25rem;
-    margin-left: 1rem;
+    font-size: 2.5rem;
+    margin-left: 2rem;
     color: #3d37f1;
 }
 
@@ -41,38 +48,43 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
 
 .content-wrapper {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .content-wrapper > h1 {
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: 900;
 }
 
 .content-wrapper > p {
-    font-size: 1.5rem;
-    margin-block: 3rem;
+    font-size: 4rem;
+    margin-block: 8rem;
 }
 
 .button {
     width: 18vw;
-    max-width: 200px;
+    max-width: 300px;
     min-width: 170px;
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
     color: white;
     background-color: #3d37f1;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 50px;
+}
+
+.button-img {
+    width: 40px;
 }
 
 .pair-image-wrapper {
@@ -82,6 +94,236 @@ li {
 
 .pair-image {
     width: 100%;
+}
+
+
+/* bottom section */
+
+.background-color {
+    background-color: #800e3d0e;
+    width: 100vw;
+}
+
+.bottom-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 6rem;
+}
+
+.top-block > :only-of-type {
+    font-size: 3rem;
+    color: #3d37f1;
+}
+
+.top-block-p:first-of-type {
+    font-size: 5rem;
+    margin-block: 3rem;
+    text-align: center;
+}
+
+.top-block-p:last-of-type {
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    width: 60%;
+}
+
+/* bottom section block-list */
+
+.bottom-block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.block-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    margin: 4rem;
+    min-width: 750px;
+}
+
+.block-wrapper > :nth-child(2) {
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.block-wrapper > :nth-child(3) {
+    width: 20vw;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-inline: 2rem;
+    margin-block: 10rem;
+    line-height: 5rem;
+}
+
+.block-wrapper > img {
+    width: 10vh;
+}
+
+.readmore-button {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+    border: .1rem solid white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* hover effect */
+.readmore-button:hover {
+    background-color: #ffffff;
+    color: #4b647e;
+}
+
+/* background gradients */
+
+.block-wrapper:first-child {
+    background-image: linear-gradient(to bottom, #fbba77, #dfa871);
+}
+
+.block-wrapper:nth-child(2) {
+    background-image: linear-gradient(to bottom, #41eae3, #2293b7);
+}
+
+.block-wrapper:nth-child(3) {
+    background-image: linear-gradient(to bottom, #69529f, #463864);
+}
+
+.block-wrapper:nth-child(4) {
+    background-image: linear-gradient(to bottom, #4386d2, #0962c5);
+}
+
+.block-wrapper:nth-child(5) {
+    background-image: linear-gradient(to bottom, #a5a2f6, #564fd6);
+}
+
+.block-wrapper:last-child {
+    background-image: linear-gradient(to bottom, #ff8088, #984141);
+}
+
+
+/* media at 2000px */
+
+@media only screen and (max-width: 2000px) {
+    header {
+        padding-top: 3rem;
+    }
+    
+    .logo {
+        width: 10vw;
+        min-width: 140px;
+        max-width: 200px;
+    }
+    
+    li {
+        font-size: 1.25rem;
+        margin-left: 1rem;
+    }
+    
+    /* top-section */
+    
+    .top-section-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+    
+    .content-wrapper {
+        width: 40%;
+    }
+    
+    .content-wrapper > h1 {
+        font-size: 4rem;
+    }
+    
+    .content-wrapper > p {
+        font-size: 1.5rem;
+        margin-block: 3rem;
+    }
+    
+    .button {
+        max-width: 200px;
+        min-width: 170px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }    
+    
+    /* bottom section */
+    
+    .top-block {
+        margin-block: 3rem;
+    }
+    
+    .top-block > :only-of-type {
+        font-size: 1.3rem;
+    }
+    
+    .top-block-p:first-of-type {
+        font-size: 3rem;
+        margin-block: 2rem;
+    }
+    
+    .top-block-p:last-of-type {
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 70%;
+    }
+    
+    /* bottom section block-list */
+    
+    .bottom-block {
+        max-width: 1200px;
+    }
+    
+    .block-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin: .8rem;
+        min-width: 200px;
+    }
+    
+    .block-wrapper > :nth-child(2) {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+    
+    .block-wrapper > :nth-child(3) {
+        width: 285px;
+        font-size: 1rem;
+        margin-block: 3rem;
+        margin-inline: 1.5rem;
+        line-height: 1.5rem;
+
+    }
+
+    .block-wrapper > img {
+        width: 6vh;
+    }
+    
+    .readmore-button {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+    }
+    
 }
 
 /* media at 1408px */
@@ -126,6 +368,10 @@ li {
 /* media at 992 */
 
 @media only screen and (max-width: 992px) {
+    header {
+        padding-top: 2rem;
+    }
+    
     nav {
         display: none;
     }
@@ -156,6 +402,10 @@ li {
 /* media at 576 */
 
 @media only screen and (max-width: 576px) {
+    .content-wrapper > h1 {
+        font-size: 3rem;
+    }
+    
     .pair-image-wrapper {
         width: 70%;
         min-width: 350px;
