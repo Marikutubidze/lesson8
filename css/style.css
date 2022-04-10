@@ -36,10 +36,12 @@ li {
     font-size: 2.5rem;
     margin-left: 2rem;
     color: #3d37f1;
+    padding-top: .3rem;
 }
 
 .burger {
     display: none;
+    padding-top: .2rem;
 }
 
 /* top-section */
@@ -158,6 +160,7 @@ li {
     padding-bottom: 4rem;
     margin: 4rem;
     max-width: 900px;
+    border-radius: 1rem;
 }
 
 .block-wrapper > :nth-child(2) {
@@ -389,14 +392,23 @@ li {
         padding-top: 2rem;
     }
     
-    nav {
+    li:not(.active){
         display: none;
     }
-
+    
     .burger {
         display: block;
         font-size: 1.3rem;
         color: #3d37f1;
+        margin-left: 1rem;
+    }
+
+    .active {
+        font-size: 1rem;
+    }
+
+    .nav-bar {
+        display: flex;
     }
     
     .pair-image-wrapper {
