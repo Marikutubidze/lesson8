@@ -21,7 +21,7 @@ header {
     left: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: #f9c2d9f5;
+    background-color: #f8dce8f5;
     padding: 2rem;
     width: 100%;
     z-index: 99;
@@ -42,14 +42,14 @@ nav > ul {
 li {
     font-size: 2.5rem;
     margin-left: 2rem;
-    color: white;
+    color:#5a5454;
     padding-top: .3rem;
 }
 
 .burger {
     display: none;
-    color: white;
-    padding-top: .2rem;
+    color: #5a5454;
+    padding-top: .25rem;
     font-size: 1.3rem;
     margin-left: 1rem;
 }
