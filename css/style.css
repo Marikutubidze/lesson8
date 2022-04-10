@@ -107,11 +107,11 @@ li {
 .bottom-section {
     width: 90%;
     margin: 0 auto;
-    font-size: 5rem;
     margin-block: 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -123,11 +123,20 @@ li {
     margin-block: 5rem;
 }
 
+.top-block > h2 {
+    font-size: 4rem;
+    color: #0962c5;
+}
+
+.top-block-p:first-of-type {
+    font-size: 4rem;
+    margin-block: 4rem;
+}
+
 .top-block-p:last-of-type {
     font-size: 3rem;
     line-height: 4rem;
-    text-align: center;
-    width: 60%;
+    width: 70%;
 }
 
 /* bottom section block-list */
@@ -148,7 +157,7 @@ li {
     padding-top: 5rem;
     padding-bottom: 4rem;
     margin: 4rem;
-    min-width: 750px;
+    max-width: 900px;
 }
 
 .block-wrapper > :nth-child(2) {
@@ -157,12 +166,12 @@ li {
 }
 
 .block-wrapper > :nth-child(3) {
-    width: 20vw;
-    font-size: 3rem;
+    max-width: 685px;
+    font-size: 2.5rem;
     line-height: 3rem;
     text-align: center;
     margin-inline: 2rem;
-    margin-block: 10rem;
+    margin-block: 5rem;
     line-height: 5rem;
 }
 
@@ -171,8 +180,8 @@ li {
 }
 
 .readmore-button {
-    font-size: 3rem;
-    padding: 2rem 3rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 3rem;
     border: .1rem solid white;
     border-radius: 50px;
     cursor: pointer;
@@ -210,18 +219,141 @@ li {
     background-image: linear-gradient(to bottom, #ff8088, #984141);
 }
 
+/* media at 2930px  */
+
+@media only screen and (max-width: 2930px) {
+    .block-wrapper {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        margin: 2rem;
+        max-width: 900px;
+    }
+    
+    .bottom-block {
+        max-width: 2500px;
+    }
+    
+    .block-wrapper > :nth-child(3) {
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        margin-inline: 1rem;
+        margin-block: 5rem;
+        line-height: 3rem;
+        max-width: 550px;
+    }
+    
+    .block-wrapper > img {
+        width: 8vh;
+    }
+    
+}
+
+
+/* media at 2000px */
+
+@media only screen and (max-width: 2255px) {
+    header {
+        padding-top: 3rem;
+    }
+    
+    .logo {
+        max-width: 200px;
+    }
+    
+    li {
+        font-size: 1.25rem;
+        margin-left: 1rem;
+    }
+    
+    /* top-section */
+    
+    .top-section-wrapper {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+    
+    .content-wrapper {
+        width: 40%;
+    }
+    
+    .content-wrapper > h1 {
+        font-size: 4rem;
+    }
+    
+    .content-wrapper > p {
+        font-size: 2rem;
+        margin-block: 3rem;
+    }
+    
+    .button {
+        max-width: 200px;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }    
+    
+    /* bottom section */
+    
+    .top-block {
+        margin-block: 3rem;
+    }
+    
+    .top-block > h2 {
+        font-size: 2rem;
+    }
+    
+    .top-block-p:first-of-type {
+        font-size: 3.3rem;
+        margin-block: 2rem;
+    }
+    
+    .top-block-p:last-of-type {
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 60%;
+    }
+    
+    /* bottom section block-list */
+    
+    .bottom-block {
+        max-width: 1200px;
+    }
+    
+    .block-wrapper {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        margin: .8rem;
+        min-width: 100px;
+    }
+    
+    .block-wrapper > :nth-child(2) {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    
+    .block-wrapper > :nth-child(3) {
+        min-width: 285px;
+        font-size: 1.3rem;
+        margin-block: 3.5rem;
+        margin-inline: 1.5rem;
+        line-height: 1.5rem;
+        max-width: 300px;
+    }
+
+    .block-wrapper > img {
+        width: 6vh;
+    }
+    
+    .readmore-button {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+    
+}
 
 /* media at 1408px */
 
-@media only screen and (max-width: 992px) {
-    nav {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-        color: #3d37f1;
-    }
+@media only screen and (max-width: 1408px) {
 
     .top-section-wrapper {
         flex-direction: column;
@@ -245,116 +377,9 @@ li {
         padding: 0.5rem;  
         }
     
-        .button-img {
-            width: 20px;
-        }
-}
-
-/* media at 2000px */
-
-@media only screen and (max-width: 2000px) {
-    header {
-        padding-top: 3rem;
+    .button-img {
+        width: 20px;
     }
-    
-    .logo {
-        width: 10vw;
-        min-width: 140px;
-        max-width: 200px;
-    }
-    
-    li {
-        font-size: 1.25rem;
-        margin-left: 1rem;
-    }
-    
-    /* top-section */
-    
-    .top-section-wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 4rem;
-        margin-bottom: 5rem;
-    }
-    
-    .content-wrapper {
-        width: 40%;
-    }
-    
-    .content-wrapper > h1 {
-        font-size: 4rem;
-    }
-    
-    .content-wrapper > p {
-        font-size: 1.5rem;
-        margin-block: 3rem;
-    }
-    
-    .button {
-        max-width: 200px;
-        min-width: 170px;
-        padding: 0.5rem;
-        font-size: 1rem;
-    }    
-    
-    /* bottom section */
-    
-    .top-block {
-        margin-block: 3rem;
-    }
-    
-    .top-block > :only-of-type {
-        font-size: 1.3rem;
-    }
-    
-    .top-block-p:first-of-type {
-        font-size: 3rem;
-        margin-block: 2rem;
-    }
-    
-    .top-block-p:last-of-type {
-        font-size: 1rem;
-        line-height: 2rem;
-        width: 70%;
-    }
-    
-    /* bottom section block-list */
-    
-    .bottom-block {
-        max-width: 1200px;
-    }
-    
-    .block-wrapper {
-        padding-top: 3rem;
-        padding-bottom: 2rem;
-        margin: .8rem;
-        min-width: 100px;
-    }
-    
-    .block-wrapper > :nth-child(2) {
-        font-size: 1.2rem;
-        margin-top: 3rem;
-    }
-    
-    .block-wrapper > :nth-child(3) {
-        width: 285px;
-        font-size: 1rem;
-        margin-block: 3.5rem;
-        margin-inline: 1.5rem;
-        line-height: 1.5rem;
-
-    }
-
-    .block-wrapper > img {
-        width: 6vh;
-    }
-    
-    .readmore-button {
-        font-size: 1rem;
-        padding: 1rem 2rem;
-    }
-    
 }
 
 /* media at 992 */
@@ -373,21 +398,13 @@ li {
         font-size: 1.3rem;
         color: #3d37f1;
     }
-
-    .top-section-wrapper {
-        flex-direction: column;
+    
+    .pair-image-wrapper {
+        min-width: 100px;
     }
 
-    .content-wrapper {
-    width: 80%;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-    .pair-image-wrapper {
-        width: 80%;
-        min-width: 100px;
+    .top-block-p:last-of-type {
+    font-size: 1.5rem;
     }
 }
 
