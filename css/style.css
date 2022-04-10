@@ -7,17 +7,24 @@ body {
     font-family: 'Amiri', serif;
 }
 
-.wrapper {
+.main-wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin-inline: auto;    
+    margin-top: 120px;
 }
 
 /* header */
 header {
+    position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
+    background-color: #800e3d5d;
+    padding: 2rem;
+    width: 100%;
+    z-index: 99;
 }
 
 .logo {
@@ -35,13 +42,16 @@ nav > ul {
 li {
     font-size: 2.5rem;
     margin-left: 2rem;
-    color: #3d37f1;
+    color: white;
     padding-top: .3rem;
 }
 
 .burger {
     display: none;
+    color: white;
     padding-top: .2rem;
+    font-size: 1.3rem;
+    margin-left: 1rem;
 }
 
 /* top-section */
@@ -225,6 +235,7 @@ li {
 /* media at 2930px  */
 
 @media only screen and (max-width: 2930px) {
+
     .block-wrapper {
         padding-top: 4rem;
         padding-bottom: 3rem;
@@ -253,19 +264,15 @@ li {
 }
 
 
-/* media at 2000px */
+/* media at 2255px */
 
 @media only screen and (max-width: 2255px) {
-    header {
-        padding-top: 3rem;
-    }
-    
     .logo {
         max-width: 200px;
     }
     
     li {
-        font-size: 1.25rem;
+        font-size: 2rem;
         margin-left: 1rem;
     }
     
@@ -357,6 +364,9 @@ li {
 /* media at 1408px */
 
 @media only screen and (max-width: 1408px) {
+    li {
+        font-size: 1.5rem;
+    }
 
     .top-section-wrapper {
         flex-direction: column;
@@ -388,23 +398,16 @@ li {
 /* media at 992 */
 
 @media only screen and (max-width: 992px) {
-    header {
-        padding-top: 2rem;
-    }
-    
     li:not(.active){
         display: none;
     }
-    
+
     .burger {
         display: block;
-        font-size: 1.3rem;
-        color: #3d37f1;
-        margin-left: 1rem;
     }
 
     .active {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .nav-bar {
